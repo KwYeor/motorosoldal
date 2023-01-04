@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vizsgamunka</title>
+    <link rel="stylesheet" href="./vizsgamunka.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+     <script src="https://kit.fontawesome.com/df7d4a3370.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="container">
+
+<header>
+    <div id="kapcsolat"></div>
+    <div class="focim">
+        <h2 class="xcim">VR Motoros társaság</h2>
+    </div class="cimke">
+        <img src="./vizsgamunkamedia/pngwing.com.png" width="50%" alt="logo">
+</header>
+
+<nav>
+    <ul class="navlista">
+        <li class="navelem"><a href="./index.html"><i class="fa-sharp fa-solid fa-torii-gate"></i> Főoldal</a></li>
+        <li class="navelem"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
+        <li class="navelem"><a href="./vresemeny.html"><i class="fa-sharp fa-solid fa-calendar"></i>  Események</a></li>
+        <li class="navelem"><a href="./vrhistory.html"><i class="fa-sharp fa-solid fa-motorcycle"></i>Emlékek</a></li>
+        <li class="aktiv"><a href="./vrkapcsolat.html"><i class="fa-sharp fa-solid fa-file-signature"></i>Kapcsolat</a></li>
+        </ul>
+</nav>
+
+
+<article>
+    <h1 class="urlap__parancs">Töltsd ki az űrlapot, ha fel akarod venni velünk a kapcsolatot!</h1>
+
+    <form action="#"  method="post" class="urlap">
+        <label for="nev">Név:</label>
+        <input type="text" name="nev" id="nev">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" >
+        <label for="uzenet">Üzenet:</label>
+        <textarea name="uzenet" id="uzenet" cols="30" rows="10" ></textarea>
+        <button id="gomb">Elküld</button>
+
+    </form>    
+
+</article>
+
+<aside>
+    
+    <section>
+        <a class="popup" href="https://bdpstrock.hu/popup-player/" target="popup" onclick="window.open('https://bdpstrock.hu/popup-player/','BDPST ROCK play','width=250,height=450')"
+        title="BDPST ROCK play"><img src="https://www.bdpstrock.hu/popup-player/assets/img/player.png" 
+        width="160" title="BDPST ROCK play" alt="BDPST ROCK play">
+        </a><script async src="https://www.bdpstrock.hu/popup-player/assets/js/radio.js" ></script>
+    </section>
+    <section>
+        <a class="popup" href="http://www.idokep.hu/" target="_blank" title="Felhőkép"><img src="//www.idokep.hu/terkep/hu_mini/i_anim.gif" alt="Felhőkép"></a>  
+    </section>
+    <section>
+        <a class="popup" href="http://www.idokep.hu/" target="_blank" title="Hőtérkép"><img src="//www.idokep.hu/terkep/hu_mini/hom_kozepes.jpg" alt="Hőtérkép"></a>
+    </section>
+    
+</aside>
+
+<footer>
+    <div class="copy">
+        <p class="copytext" >Copyright &copy; Heim Gábor</p>
+    </div>
+    <div class="arrow">
+        <a href="#kapcsolat"><i class="fa-sharp fa-solid fa-circle-up"></i></a>   
+    </div>
+</footer>
+
+</div>
+<body>
+<script src="./vizsgamunka.js"></script>
+</body>
+</html>

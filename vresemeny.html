@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vizsgamunka</title>
+    <link rel="stylesheet" href="./vizsgamunka.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/df7d4a3370.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="container">
+
+<header>
+    <div id="esemeny"></div>
+    <div class="focim">
+        <h2 class="xcim">VR Motoros társaság</h2>
+    </div class="cimke">
+        <img src="./vizsgamunkamedia/pngwing.com.png" width="50%" alt="logo">
+</header>
+
+<nav>
+    <ul class="navlista">
+        <li class="navelem"><a href="./index.html"><i class="fa-sharp fa-solid fa-torii-gate"></i> Főoldal</a></li>
+        <li class="navelem"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
+        <li class="aktiv"><a href="./vresemeny.html"><i class="fa-sharp fa-solid fa-calendar"></i> Események</a></li>
+        <li class="navelem"><a href="./vrhistory.html"><i class="fa-sharp fa-solid fa-motorcycle"></i>Emlékek</a></li>
+        <li class="navelem"><a href="./vrkapcsolat.html"><i class="fa-sharp fa-solid fa-file-signature"></i>Kapcsolat</a></li>
+    </ul>
+</nav>
+
+
+<article>
+    
+    <section class="esemeny">
+        <iframe id="naptar" src="https://calendar.google.com/calendar/embed?src=74da43f5f0f0259f2d370a0b044bea60807614660974a5900ed9174bee74c8f3%40group.calendar.google.com&ctz=Europe%2FBudapest" "></iframe>
+        
+        <div>
+            <h2 class="komment" >Tervezett túraútvonalak</h2>
+        </div>
+        <p><i class="fa-sharp fa-solid fa-road"></i> Újévi gurulás</p>
+            <section class="tura">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d111087.65236435794!2d18.45820123151713!3d47.1886158635918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e0!4m5!1s0x4769f7cfb76680f1%3A0x1728113f21c3e34a!2zUGFya29sw7M!3m2!1d47.208523199999995!2d18.4254058!4m5!1s0x4769f8102a23cf43%3A0x5ee41d01d64af3d!2zU3rDqWtlc2ZlaMOpcnbDoXIsIENzw7pjc29zLWhlZ3k!3m2!1d47.199999999999996!2d18.483333299999998!4m5!1s0x476a01e8eba9f441%3A0x93d23aaa3d1661c!2zR8OhcmRvbnksIEFnw6FyZGkgc3phYmFkc3RyYW5kLCDDnGTDvGzFkWsgw7p0amE!3m2!1d47.202076299999995!2d18.6086366!4m3!3m2!1d47.2409737!2d18.6522048!4m5!1s0x476a0269b3d6b1e3%3A0x39fd4af6e6b259!2sP%C3%A1kozd%2C%20Miskahusz%C3%A1r%20szobra%2C%20Unnamed%20Road!3m2!1d47.217101199999995!2d18.5538654!4m5!1s0x4769f7e3f96e442f%3A0xe95c078101351414!2zU3rDqWtlc2ZlaMOpcnbDoXIsIEJvcnktdsOhciwgTcOhcmlhdsO2bGd5IDU0LCA4MDAw!3m2!1d47.2106905!2d18.451357299999998!4m5!1s0x4769f7cfb76680f1%3A0x1728113f21c3e34a!2zUGFya29sw7MsIFN6w6lrZXNmZWjDqXJ2w6FyLCBTemVudCBGbMOzcmnDoW4ga3J0LiwgODAwMA!3m2!1d47.208523199999995!2d18.4254058!5e0!3m2!1shu!2shu!4v1672763715296!5m2!1shu!2shu" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info">
+                <form action="https://formspree.io/f/xgebeakn" method="post">
+                <fieldset>
+                    <legend>Visszajelzés:</legend>
+                    <input type="radio" id="igen" name="feedback" value="igen">
+                    <label for="igen">Ott leszek!</label><br>
+                    <input type="radio" id="talan" name="feedback" value="talan">
+                    <label for="talan">Majd meglátom...</label><br>
+                    <input type="radio" id="nem" name="feedback" value="nem">
+                    <label for="nem">Sajnos kihagyom</label> <br>
+                    <label for="nev">Név:   </label>
+                    <input type="text" name="nev" id="nev"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" >
+                    <input type="submit" value="Küldés">
+                </fieldset>
+                </form>
+            </div>
+        </section>
+        <p><i class="fa-sharp fa-solid fa-road"></i> Látogatás a Yamaha márkaklubnál</p>
+        <section class="tura">
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11188.943034848395!2d19.02878319094222!3d47.47729578870109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb20bbf4053%3A0x92c0d0b26560a131!2sYamaha%20Motor%20Middle%20Europe%20B.V.%20Magyarorsz%C3%A1gi%20Fi%C3%B3ktelepe!5e0!3m2!1shu!2shu!4v1672774326062!5m2!1shu!2shu" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info">
+            <form action="#" method="post">
+            <fieldset>
+                <legend>Visszajelzés:</legend>
+                <input type="radio" id="igen" name="feedback" value="igen">
+                <label for="igen">Ott leszek!</label><br>
+                <input type="radio" id="talan" name="feedback" value="talan">
+                <label for="talan">Majd meglátom...</label><br>
+                <input type="radio" id="nem" name="feedback" value="nem">
+                <label for="nem">Sajnos kihagyom</label> <br>
+                <label for="nev">Név:   </label>
+                <input type="text" name="nev" id="nev"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" >
+                <input type="submit" value="Küldés">
+            </fieldset>
+            </form>
+        </div>
+    </section>
+    </article>
+
+<aside>
+    
+    <section>
+        <a class="popup" href="https://bdpstrock.hu/popup-player/" target="popup" onclick="window.open('https://bdpstrock.hu/popup-player/','BDPST ROCK play','width=250,height=450')"
+        title="BDPST ROCK play"><img src="https://www.bdpstrock.hu/popup-player/assets/img/player.png" 
+        width="160" title="BDPST ROCK play" alt="BDPST ROCK play">
+        </a><script async src="https://www.bdpstrock.hu/popup-player/assets/js/radio.js" ></script>
+    </section>
+    <section>
+        <a class="popup" href="http://www.idokep.hu/" target="_blank" title="Felhőkép"><img src="//www.idokep.hu/terkep/hu_mini/i_anim.gif" alt="Felhőkép"></a>  
+    </section>
+    <section>
+        <a class="popup" href="http://www.idokep.hu/" target="_blank" title="Hőtérkép"><img src="//www.idokep.hu/terkep/hu_mini/hom_kozepes.jpg" alt="Hőtérkép"></a>
+    </section>
+</aside>
+
+<footer>
+    <div class="copy">
+        <p class="copytext" >Copyright &copy; Heim Gábor</p>
+    </div>
+    <div class="arrow">
+        <a href="#esemeny"><i class="fa-sharp fa-solid fa-circle-up"></i></a>   
+    </div>
+</footer>
+
+</div>
+<body>
+<script src="./vizsgamunka.js"></script>
+</body>
+</html>

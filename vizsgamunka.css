@@ -1,0 +1,462 @@
+/*az index.html -hez tartozó css*/
+/*tartalom*/
+
+.container{font-family:serif;
+    font-size:x-large;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px limegreen;
+    background-color: black;
+    padding: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;    
+}
+
+.header {
+    display: flex;
+    overflow: hidden;
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+}
+.focim {
+    float: right;
+}
+.cimke{
+    float: right;
+    text-align: center;
+}
+
+.xcim{
+    float: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .focim {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .cimke {
+      float: center ;
+      display: block;
+      align-content: center;
+      text-align: center;
+    }
+    header img{
+        width: 100%;
+        float: center;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+
+a{text-decoration: none;
+    color: black;
+    font-family: serif;
+
+}
+ul{padding: 5px 5px 20px 5px;}
+
+.navlista{
+    width: 159px;
+}
+.navlista a:hover{
+ color: limegreen;
+ text-shadow: 2px 2px 2px black;
+}
+
+.navelem{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.aktiv{
+    color: black;
+    border-radius: 5px;
+    border: solid;
+    list-style-type: none;
+    width: fit-content;
+}
+article{
+    padding: 2px;
+    z-index: 100%;
+    position: relative
+}
+.bemutatkozas{
+    color: limegreen;
+    z-index: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.fooldal_article{
+    background: black ;
+}
+
+.video_bg{
+    z-index: 0;
+    position: absolute;
+    inset: calc(0rem);
+
+}
+.video_bg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.garage_article{
+    display: grid;
+    text-align: center;
+}
+
+.garage_text ul{
+    list-style-type: none;
+}
+.garage_text a{
+    font-style: italic;
+    font-size: smaller;
+}
+
+.utvonal{
+    width: 500px
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bpr{display: flex;
+flex-direction: row ;
+}
+.popup{
+    width: 90%;
+    margin: 10px 2px 2px 2px;
+    padding-top: 10px;
+}
+
+.esemeny{
+    width: 98%;
+    height: 98%;
+    padding: 2px;
+}    
+#naptar{
+    width: 100%;
+    height: 30rem;
+}   
+
+/* események */
+.tura{
+    display: flex;
+    flex-direction: row;
+}
+.maps{
+    flex: content;
+    justify-content: flex-start;
+}
+.info{
+    flex: content;
+    justify-content: flex-end;
+}
+    
+
+/*kapcsolat lap*/
+form{align-content:  center;
+    padding: 2px;
+        }
+[type="text"]{
+    background-color: rgb(208, 208, 165);
+}        
+[type="email"]{
+    background-color: rgb(215, 215, 163);
+}      
+textarea{
+    background-color: rgb(215, 215, 163);
+}      
+button{
+    text-transform: uppercase; margin: 200px; border-style: double;
+    background-color: rgb(215, 215, 163)
+}
+[type="submit"]{
+    background-color: rgb(210, 210, 148);
+} 
+[type="radio"]{
+    background-color: rgb(210, 210, 148);
+} 
+
+/* footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+.copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ .arrow a:hover{
+    color: black;
+    text-shadow: 2px 2px 15px lightgreen;
+
+}
+.arrow a{
+    position: fixed;
+    bottom: 10px;
+    right: 180px;
+    color: lightgreen;
+    text-shadow: 2px 2px 15px black;
+
+}
+/* responzibilitás*/
+.container{
+    display: grid;
+    grid-template-columns: 0.6fr 3.8fr  0.6fr;
+    gap: 3px;
+    justify-content: center;
+    align-content: stretch;
+        }
+nav{background-color: rgb(244, 244, 153);
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    border-radius: 4px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: center;
+
+    }
+    
+header {background-color: rgb(244, 244, 153);
+    border-radius: 4px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+} 
+
+article{background-color: rgb(244, 244, 153);
+    border-radius: 4px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+}
+aside{background-color: rgb(244, 244, 153);
+    border-radius: 4px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+}
+footer{background-color: rgb(244, 244, 153);
+    border-radius: 4px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+}
+
+@media screen and (max-width: 768px)
+{.container{grid-template-columns: 100%;
+}
+nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+header {background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    flex-direction: column;    
+}        
+article{background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+aside{background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer{background-image: url(./vizsgamunkamedia/hatter.jpg );
+    background-size: cover ;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.arrow a{
+    right: 20px;
+}}
+@media screen and (max-width: 991px){
+.tura{
+    flex-direction: column;
+}}
+ 
+/*kapcsolat oldal*/
+
+.urlap__parancs{
+    text-align: center;
+}
+.urlap{
+    display: grid;
+    grid-template-columns: [labels] 1fr [controls] 3fr;
+    margin: 3%;
+    padding: 3%;
+}
+
+.urlap > label {
+    grid-column: labels;
+    grid-row: auto;
+    margin: 3% 3%;
+}
+.urlap > input,
+.urlap > textarea {
+    grid-column: controls;
+    grid-row: auto;
+    border-radius: 5px;
+    margin: 3% 3%;
+    border: solid 2px;       
+}
+.urlap > button{
+    grid-column: span 1;
+    grid-column-start: 2;
+    margin: 3% 3%;       
+    border-radius: 5px ;
+    border: solid 2px;
+}
+
+/*history*/
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+.komment{
+    text-align: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 1;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#igen {
+    accent-color: rgb(9, 176, 9);
+}
+
+#talan {
+    accent-color: rgb(255, 255, 4);
+}
+
+#nem {
+    accent-color: red;
+}
