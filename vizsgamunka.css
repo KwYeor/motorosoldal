@@ -59,9 +59,16 @@ header{
 a{text-decoration: none;
     color: black;
     font-family: serif;
-
+/* hamburger menu*/
 }
 ul{padding: 5px 5px 20px 5px;}
+li{
+    white-space: nowrap;
+}
+
+
+
+
 
 .navlista{
     width: 159px;
@@ -171,7 +178,7 @@ flex-direction: row ;
 
 /*kapcsolat lap*/
 form{align-content:  center;
-    padding: 2px;
+    padding-left: 0px;
         }
 [type="text"]{
     background-color: rgb(208, 208, 165);
@@ -234,6 +241,7 @@ nav{background-color: rgb(244, 244, 153);
     grid-column-start: 1;
     grid-column-end: 2;
     align-items: center;
+    min-width: 160px;
 
     }
     
@@ -274,9 +282,15 @@ footer{background-color: rgb(244, 244, 153);
     background-image: url(./vizsgamunkamedia/hatter.jpg );
     background-size: cover ;
 }
+#hamburger {
+    visibility: hidden;
+}
 
 @media screen and (max-width: 768px)
 {.container{grid-template-columns: 100%;
+}
+#hamburger {
+    visibility: visible ;
 }
 nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
     background-size: cover ;
@@ -284,7 +298,33 @@ nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    }
+}
+.menu-active{
+    transform: translateX(0);
+}
+
+nav{position: absolute;
+    top: 0;
+    height: 40%;
+    background: red;
+    transform: translateX(-10rem); 
+    transition: transform 350ms ease-in-out;
+    padding-bottom: 0.8rem;
+    margin-top: 2rem;
+    border-radius:  10px;
+}
+#hamburger{
+    margin: 1rem 0 0 1rem;
+    color: black;
+    background-color: limegreen;
+    font-size: 1.5rem;
+    z-index: 2;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 0.8rem 0.8rem 0.9rem 0.9rem;
+    cursor: pointer;
+}
+
 header {background-image: url(./vizsgamunkamedia/hatter.jpg );
     background-size: cover ;
     grid-row-start: 1;
