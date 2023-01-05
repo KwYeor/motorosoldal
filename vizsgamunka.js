@@ -30,6 +30,6 @@ function showSlides(n) {
 const hamburger = document.getElementById('hamburger')
 const nav = document.getElementById('nav')
 
-hamburger.addEventListener( 'onclick' , function (event){
+hamburger.addEventListener( 'click' , function (event){
   nav.classList.toggle('menu-active')
 })

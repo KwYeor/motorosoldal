@@ -305,7 +305,7 @@ nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
 
 nav{position: absolute;
     top: 0;
-    height: 25%;
+    height: 33%;
     background: red;
     transform: translateX(-10rem); 
     transition: transform 350ms ease-in-out;
