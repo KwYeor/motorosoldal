@@ -305,7 +305,7 @@ nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
 
 nav{position: absolute;
     top: 0;
-    height: 40%;
+    height: 25%;
     background: red;
     transform: translateX(-10rem); 
     transition: transform 350ms ease-in-out;
@@ -333,6 +333,9 @@ header {background-image: url(./vizsgamunkamedia/hatter.jpg );
     grid-column-end: 2;
     flex-direction: column;    
 }        
+header img {
+    width: 100%;
+}
 article{background-image: url(./vizsgamunkamedia/hatter.jpg );
     background-size: cover ;
     grid-row-start: 3;
@@ -500,3 +503,8 @@ footer{background-image: url(./vizsgamunkamedia/hatter.jpg );
 #nem {
     accent-color: red;
 }
+
+.view-cap, .view-container-border {
+    background-color: #e4dd7c;
+}
+
