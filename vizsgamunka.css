@@ -31,6 +31,8 @@ header{
 .xcim{
     float: center;
     text-align: center;
+    margin: 52px 2px 10px 2px;
+    padding-left: 3px;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,7 +63,7 @@ a{text-decoration: none;
     font-family: serif;
 /* hamburger menu*/
 }
-ul{padding: 5px 5px 20px 5px;}
+nav ul{padding: 40px 0px 0px 5px;}
 li{
     white-space: nowrap;
 }
@@ -90,6 +92,9 @@ li{
     list-style-type: none;
     width: fit-content;
 }
+
+
+
 article{
     padding: 2px;
     z-index: 100%;
@@ -118,7 +123,7 @@ article{
     object-fit: cover;
     opacity: 0.3;
 }
-
+/*
 .garage_article{
     display: grid;
     text-align: center;
@@ -131,6 +136,45 @@ article{
     font-style: italic;
     font-size: smaller;
 }
+*/
+.garage_text{
+    display: flex;
+}
+  
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
 
 .utvonal{
     width: 500px
@@ -213,17 +257,19 @@ footer{
 }
  .arrow a:hover{
     color: black;
-    text-shadow: 2px 2px 15px lightgreen;
-
+    text-shadow: 3px 3px 15px 3px limegreen;
 }
 .arrow a{
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     right: 180px;
     color: lightgreen;
-    text-shadow: 2px 2px 15px black;
+    text-shadow: 3px 3px 15px 3px black;
+    border-radius: 100px;
 
 }
+
+
 /* responzibilitás*/
 .container{
     display: grid;
@@ -305,24 +351,30 @@ nav{background-image: url(./vizsgamunkamedia/hatter.jpg );
 
 nav{position: absolute;
     top: 0;
-    height: 33%;
-    background: red;
-    transform: translateX(-10rem); 
+    height: 38%;
+/*    background: rgb(211, 172, 55); */
+    background-image: url(./vizsgamunkamedia/hatter.jpg);
+    transform: translateX(-11rem); 
     transition: transform 350ms ease-in-out;
     padding-bottom: 0.8rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius:  10px;
+    box-shadow: 3px 3px 8px 4px rgb(29, 28, 28);
 }
 #hamburger{
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 1rem 0 0 1rem;
     color: black;
-    background-color: limegreen;
-    font-size: 1.5rem;
+    background-color: rgb(55, 169, 55);
+    font-size: 1.3rem;
     z-index: 2;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 0.8rem 0.8rem 0.9rem 0.9rem;
     cursor: pointer;
+    box-shadow: 3px 3px 6px 2px rgb(29, 28, 28);
 }
 
 header {background-image: url(./vizsgamunkamedia/hatter.jpg );
@@ -412,7 +464,9 @@ footer{background-image: url(./vizsgamunkamedia/hatter.jpg );
   max-width: 1000px;
   position: relative;
   margin: auto;
-  align-items: center;
+}
+.slideshow-container img{
+    padding: 0 0 10% 20%;
 }
 
 .komment{
@@ -504,7 +558,5 @@ footer{background-image: url(./vizsgamunkamedia/hatter.jpg );
     accent-color: red;
 }
 
-.view-cap, .view-container-border {
-    background-color: #e4dd7c;
-}
+
 
