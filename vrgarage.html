@@ -20,7 +20,7 @@
     </div class="cimke">
         <img src="./vizsgamunkamedia/pngwing.com.png" width="50%" alt="logo">
     <div class="hambi">
-        <i class="fa-sharp fa-solid fa-bars" id="hamburger" ></i>
+        <i onclick="myFunction(this)" class="fa-sharp fa-solid fa-bars" id="hamburger" ></i>
     </div>
         
 </header>
@@ -28,218 +28,126 @@
 <nav class="menu-active" id="nav">
     <ul class="navlista">
         <li class="navelem"><a href="./index.html"><i class="fa-sharp fa-solid fa-torii-gate"></i> Főoldal</a></li>
-        <li class="aktiv"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
         <li class="navelem"><a href="./vresemeny.html"><i class="fa-sharp fa-solid fa-calendar"></i>  Események</a></li>
         <li class="navelem"><a href="./vrhistory.html"><i class="fa-sharp fa-solid fa-motorcycle"></i>Emlékek</a></li>
+        <li class="aktiv"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
         <li class="navelem"><a href="./vrkapcsolat.html"><i class="fa-sharp fa-solid fa-file-signature"></i>Kapcsolat</a></li>
     </ul>
 </nav>
         
 
 <article class="garage_article" >
-    <div class="garage_text">
-        <h3 >
-        Egy kattintással letöltheted a szükséges adatlapokat, használati utasításokak és szervízkönyveket! 
-        </h3>
-<!--        <ul>
-            <li>EN500</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/en500_service_manual_1996-2005.pdf" 
-                    target="_blank">Szervízkönyv</a></li>
-            </ul>
-            <li>VN800</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_service_manual_1996-2002.pdf" 
-                    target="_blank">Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_classic_owners_manual_2001.pdf" 
-                target="_blank">Használati utasítás</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_drifter_owners_manual_2000.pdf" 
-                    target="_blank">Drifter Használati utasítás</a></li>
-            </ul>
-            <li>VN900</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_service_manual_2006.pdf" 
-                    target="_blank">Classic Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_service_manual_2007-2015.pdf" 
-                target="_blank">Custom Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_owners_manual_2014.pdf" 
-                    target="_blank">Custom Használati utasítás</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_datasheet_2011.pdf" 
-                    target="_blank">Classic adatlap</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_datasheet_2010.pdf" 
-                    target="_blank">Custom adatlap</a></li>
-            </ul>
-            <li>VN1500</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn15_service_manual.pdf" 
-                    target="_blank">VN15 Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_fi_service_manual_2000-2008.pdf" 
-                    target="_blank">Classic Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_tourer_service_manual_1998-2001.pdf" 
-                    target="_blank">Nomad, Classic Tourer Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_mean_streak_service_manual.pdf" 
-                    target="_blank">Mean Streak Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_drifter_service_manual.pdf" 
-                    target="_blank">Drifter Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_datasheet_2001.pdf" 
-                    target="_blank">Classic adatlap</a></li>
-            </ul>
-            <li>VN1600</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_service_manual_2003-2004.pdf" 
-                    target="_blank">Classic Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_service_manual_2005.pdf" 
-                    target="_blank">Nomad, Classic Tourer Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_mean_streak_service_manual_2004.pdf" 
-                    target="_blank">Mean Streak Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_assembly_prep_2005.pdf" 
-                    target="_blank">Nomad, Classic Tourer összeszerelési kézikönyv</a></li>
-            </ul>
-            <li>VN1700</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                    target="_blank">Nomad, Classic Tourer Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_service_manual_2009.pdf" 
-                    target="_blank">Voyager Szervízkönyv</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                    target="_blank">Voyager Használati utasítás</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                    target="_blank">Vaquero Használati utasítás</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_classic_abs_datasheet_2010.pdf" 
-                    target="_blank">Classic Adatlap</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
-                    target="_blank">Nomad, Classic Tourer Adatlap</a></li>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
-                    target="_blank">Voyager Adatlap</a></li>
-            </ul>
-            <li>VN2000</li>
-            <ul>
-                <li><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn2000_owners_manual_2004.pdf" 
-                    target="_blank">Használati utasítás</a></li>
-            </ul>
-        </ul> -->
-        <div class="row">
-            <div class="column">
-              <div class="card">
-                <h3>EN500</h3>
-                <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/en500_service_manual_1996-2005.pdf" 
-                    target="_blank">Szervízkönyv</a></p>
-                <p>Some text</p>
-                <p>Some text</p>
-                <p>Some text</p>
-                <p>Some text</p>
-                <p>Some text</p>
-                <p>Some text</p>
-              </div>
-            </div>
-        <div class="row">
-                <div class="column">
-                  <div class="card">
-                    <h3>VN800</h3>
-                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_service_manual_1996-2002.pdf" 
-                        target="_blank">Szervízkönyv</a></p>
-                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_classic_owners_manual_2001.pdf" 
-                        target="_blank">Használati utasítás</p>
-                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_drifter_owners_manual_2000.pdf" 
-                        target="_blank">Drifter Használati utasítás</a></p>
-                    <p>Some text</p>
-                    <p>Some text</p>
-                    <p>Some text</p>
-                    <p>Some text</p>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                      <div class="card">
-                        <h3>VN900</h3>
-                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_service_manual_2006.pdf" 
-                            target="_blank">Classic Szervízkönyv</a></p>
-                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_service_manual_2007-2015.pdf" 
-                            target="_blank">Custom Szervízkönyv</a></p>
-                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_owners_manual_2014.pdf" 
-                            target="_blank">Custom Használati utasítás</a></p>
-                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_datasheet_2011.pdf" 
-                            target="_blank">Classic adatlap</a></p>
-                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_datasheet_2010.pdf" 
-                            target="_blank">Custom adatlap</a></p>
-                        <p>Some text</p>
-                        <p>Some text</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                          <div class="card">
-                            <h3>VN1500</h3>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_datasheet_2010.pdf" 
-                                target="_blank">Custom adatlap</a></p>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_fi_service_manual_2000-2008.pdf" 
-                                target="_blank">Classic Szervízkönyv</a></p>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_tourer_service_manual_1998-2001.pdf" 
-                                target="_blank">Nomad, Classic Tourer Szervízkönyv</a></p>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_mean_streak_service_manual.pdf" 
-                                target="_blank">Mean Streak Szervízkönyv</a></p>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_drifter_service_manual.pdf" 
-                                target="_blank">Drifter Szervízkönyv</a></p>
-                            <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_datasheet_2001.pdf" 
-                                target="_blank">Classic adatlap</a></p>
-                            <p>Some text</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                            <div class="column">
-                              <div class="card">
-                                <h3>VN1600</h3>
-                                <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_service_manual_2003-2004.pdf" 
-                                    target="_blank">Classic Szervízkönyv</a></p>
-                                <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_service_manual_2005.pdf" 
-                                    target="_blank">Nomad, Classic Tourer Szervízkönyv</a></p>
-                                <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_mean_streak_service_manual_2004.pdf" 
-                                    target="_blank">Mean Streak Szervízkönyv</a></p>
-                                <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_assembly_prep_2005.pdf" 
-                                    target="_blank">Nomad, Classic Tourer összeszerelési kézikönyv</a></p>
-                                <p>Some text</p>
-                                <p>Some text</p>
-                                <p>Some text</p>
-                              </div>
-                            </div>
-                            <div class="row">
-                                <div class="column">
-                                  <div class="card">
-                                    <h3>VN1700</h3>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                                        target="_blank">Nomad, Classic Tourer Szervízkönyv</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_service_manual_2009.pdf" 
-                                        target="_blank">Voyager Szervízkönyv</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                                        target="_blank">Voyager Használati utasítás</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
-                                        target="_blank">Vaquero Használati utasítás</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_classic_abs_datasheet_2010.pdf" 
-                                        target="_blank">Classic Adatlap</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
-                                        target="_blank">Nomad, Classic Tourer Adatlap</a></p>
-                                    <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
-                                        target="_blank">Voyager Adatlap</a></p>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                    <div class="column">
-                                      <div class="card">
-                                        <h3>VN2000</h3>
-                                        <p><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn2000_owners_manual_2004.pdf" 
-                                            target="_blank">Használati utasítás</a></p>
-                                        <p>Some text</p>
-                                        <p>Some text</p>
-                                        <p>Some text</p>
-                                        <p>Some text</p>
-                                        <p>Some text</p>
-                                        <p>Some text</p>
-                                      </div>
-                                    </div>
-                                                                                              
-          </div>
 
-    </div>
+    <div class="maincard">
+    <h2 class="urlap__parancs">Egy kattintással letöltheted a szükséges adatlapokat, használati utasításokat és szervízkönyveket! </h2>
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/vn800.JPG"></div>
+          <div class="card_content">
+            <h2 class="card_title">VN800</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_service_manual_1996-2002.pdf" 
+                target="_blank">Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_classic_owners_manual_2001.pdf" 
+                target="_blank">Használati utasítás</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn800_drifter_owners_manual_2000.pdf" 
+                target="_blank">Drifter Használati utasítás</a></p>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/VN900.JPG"></div>
+          <div class="card_content">
+            <h2 class="card_title">VN900</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_service_manual_2006.pdf" 
+                target="_blank">Classic Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_service_manual_2007-2015.pdf" 
+                target="_blank">Custom Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_owners_manual_2014.pdf" 
+                target="_blank">Custom Használati utasítás</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_classic_datasheet_2011.pdf" 
+                target="_blank">Classic adatlap</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn900_custom_datasheet_2010.pdf" 
+                target="_blank">Custom adatlap</a></p>
+                                    
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/VN1500.JPG""></div>
+          <div class="card_content">
+            <h2 class="card_title">VN1500</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn15_service_manual.pdf" 
+                target="_blank">VN15 Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_fi_service_manual_2000-2008.pdf" 
+                target="_blank">Classic Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_tourer_service_manual_1998-2001.pdf" 
+                target="_blank">Nomad, Tourer Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_mean_streak_service_manual.pdf" 
+                target="_blank">Mean Streak Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_drifter_service_manual.pdf" 
+                target="_blank">Drifter Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1500_classic_datasheet_2001.pdf" 
+                target="_blank">Classic adatlap</a></p>
+        
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/vn1600_2.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">VN1600</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_service_manual_2003-2004.pdf" 
+                target="_blank">Classic Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_service_manual_2005.pdf" 
+                target="_blank">Nomad, Tourer Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_mean_streak_service_manual_2004.pdf" 
+                target="_blank">Mean Streak Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1600_classic_tourer_assembly_prep_2005.pdf" 
+                target="_blank">Nomad, Tourer kézikönyv</a></p>
+        
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/VN1700.JPG"></div>
+          <div class="card_content">
+            <h2 class="card_title">VN1700</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
+                target="_blank">Nomad, Tourer Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_service_manual_2009.pdf" 
+                target="_blank">Voyager Szervízkönyv</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
+                target="_blank">Voyager Használati utasítás</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_voyager_owners_manual_2013.pdf" 
+                target="_blank">Vaquero Használati utasítás</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_classic_abs_datasheet_2010.pdf" 
+                target="_blank">Classic Adatlap</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
+                target="_blank">Nomad, Tourer Adatlap</a></p>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn1700_nomad_abs_datasheet_2010.pdf" 
+                target="_blank">Voyager Adatlap</a></p>
+    
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="./vizsgamunkamedia/VN2000_2.JPG"></div>
+          <div class="card_content">
+            <h2 class="card_title">VN2000</h2>
+            <p class="card_text"><a href="https://vulcanriders-sweden.org/images/garage/manualer/vn2000_owners_manual_2004.pdf" 
+                target="_blank">Használati utasítás</a></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
 </article>
 
 <aside>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vizsgamunka.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/df7d4a3370.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,17 +21,17 @@
     </div class="cimke">
         <img src="./vizsgamunkamedia/pngwing.com.png" width="50%" alt="logo">
     <div class="hambi">
-        <i class="fa-sharp fa-solid fa-bars" id="hamburger" ></i>
+        <i onclick="myFunction(this)" class="fa-sharp fa-solid fa-bars" id="hamburger" ></i>
     </div>
-    
+        
 </header>
 
 <nav class="menu-active" id="nav">
     <ul class="navlista">
         <li class="navelem"><a href="./index.html"><i class="fa-sharp fa-solid fa-torii-gate"></i> Főoldal</a></li>
-        <li class="navelem"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
         <li class="navelem"><a href="./vresemeny.html"><i class="fa-sharp fa-solid fa-calendar"></i> Események</a></li>
         <li class="navelem"><a href="./vrhistory.html"><i class="fa-sharp fa-solid fa-motorcycle"></i>Emlékek</a></li>
+        <li class="navelem"><a href="./vrgarage.html"><i class="fa-sharp fa-solid fa-wrench"></i> Garázs</a></li>
         <li class="aktiv"><a href="./vrkapcsolat.html"><i class="fa-sharp fa-solid fa-file-signature"></i>Kapcsolat</a></li>
         </ul>
         
@@ -40,7 +41,7 @@
 <article>
     <h1 class="urlap__parancs">Töltsd ki az űrlapot, ha fel akarod venni velünk a kapcsolatot!</h1>
 
-    <form action="#"  method="post" class="urlap">
+    <form action="https://formspree.io/f/myyayloa"  method="post" class="urlap">
         <label for="nev">Név:</label>
         <input type="text" name="nev" id="nev">
         <label for="email">Email:</label>

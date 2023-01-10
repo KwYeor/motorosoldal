@@ -7,6 +7,11 @@ hamburger.addEventListener( 'click' , function (event){
   nav.classList.toggle('menu-active')
 })
 
+function myFunction(x) {
+  x.classList.toggle("fa-lock-open");
+}
+
+
  //slider
 
 let slideIndex = 1;
